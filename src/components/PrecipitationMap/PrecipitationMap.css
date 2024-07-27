@@ -1,0 +1,42 @@
+.weatherMap {
+	width: 50%;
+	padding: 20px;
+	padding-top: 13px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(13, 101, 169, 0.53);
+	border-radius: 10px;
+}
+
+#map {
+	height: 100%;
+	/* height: calc(100% - 30px); */
+	width: 100%;
+	overflow: hidden;
+	border-radius: 6px;
+}
+
+.mapTitle {
+	width: 100%;
+	padding-bottom: 13px;
+	text-align: start;
+	font-size: 1rem;
+	font-weight: 600;
+	color: #ffffff9a;
+}
+
+@media screen and (max-width: 992px) {
+	.weatherMap {
+		height: 400px;
+		width: auto;
+		margin-top: 25px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-color: rgb(13 101 169 / 26%);
+		border-radius: 10px;
+	}
+}

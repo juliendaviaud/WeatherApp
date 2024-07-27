@@ -1,0 +1,88 @@
+.TPDContainer {
+  width: 50%;
+  margin-right: 25px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  padding: 20px;
+  padding-top: 13px;
+  background-color: rgba(13, 101, 169, 0.53);
+  color: #fff;
+  border-radius: 10px;
+  overflow: scroll;
+  overflow-y: hidden;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.TPDContainer::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.TPDContainer {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.daysPrevisionsTitle {
+	width: 100%;
+	padding-bottom: 13px;
+	text-align: start;
+	font-size: 1rem;
+	font-weight: 600;
+	color: #ffffff9a;
+}
+
+/*---- TPH Element ----*/
+
+.TPD {
+  height: 100%;
+  margin-top: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-style: normal;
+}
+
+.firstTPD {
+  margin-top: 0;
+}
+
+.TPDHour,
+.TPD img {
+}
+
+.TPDIconAndTemp {
+  display: flex;
+  align-items: center;
+}
+
+.TPDIcon {
+  margin-right: 20px;
+}
+
+.TPD img {
+  width: 25px;
+}
+
+.TPDProgressBar {
+  height: 4px;
+  width: 70px;
+  margin: 0 10px;
+  border-radius: 5px;
+  background-image: linear-gradient(to right, rgb(244 241 21), rgb(212 60 60));
+}
+
+.TPDTemperature {
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 992px) {
+	.TPDContainer {
+		width: auto;
+		margin-right: 0;
+	}
+}

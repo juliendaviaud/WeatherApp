@@ -1,0 +1,95 @@
+.TemperatureAndQuickInfosContainer {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.city {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.25rem;
+}
+
+.temperature {
+  display: flex;
+}
+
+.temperatureNumber {
+}
+
+.degreeSign {
+  position: absolute;
+  margin-left: 1em;
+}
+
+.temperatureNumber,
+.degreeSign {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-style: normal;
+  font-size: 3rem;
+}
+
+.weather {
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+}
+
+.higherAndLowerTemperature {
+  display: flex;
+}
+
+.higherAndLowerTemperature img {
+  width: 15px;
+  margin-right: 5px;
+}
+
+.higherAndLowerTemperature p {
+  font-size: 1.2rem;
+}
+
+.higherTemperature,
+.lowerTemperature {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.higherTemperature {
+  margin-right: 15px;
+}
+
+.lowerTemperature img {
+  transform: rotate(180deg);
+}
+
+@media screen and (max-width: 992px) {
+  .TemperatureAndQuickInfosContainer {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .city {
+    font-size: 2rem;
+  }
+
+  .temperatureNumber,
+  .degreeSign {
+    font-size: 4.50rem;
+  }
+
+  .weather {
+    font-size: 1.40rem;
+  }
+
+  .higherAndLowerTemperature p {
+    font-size: 1.50rem;
+  }
+}

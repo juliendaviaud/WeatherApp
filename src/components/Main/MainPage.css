@@ -1,0 +1,45 @@
+.mainPage {
+  width: 100%;
+  height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../../assets/images/clouds.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.appContainer {
+	height: fit-content;
+	width: 80%;
+	/* max-height: 600px; */
+	max-width: 780px;
+	margin: 40px;
+	display: flex;
+	flex-direction: column;
+	border-radius: 2em;
+	background-color: #fff;
+	background: transparent;
+	border: 2px solid rgba(255, 255, 255, 0.2);
+	backdrop-filter: blur(40px);
+	color: #fff;
+	border-radius: 10px;
+	padding: 30px 40px;
+  }
+
+@media screen and (max-width: 992px) {
+
+	.mainPage {
+		height: auto;
+	}
+
+	.appContainer {
+		height: auto;
+		max-height: none;
+		margin: 0;
+		margin-top: 20%;
+		background: none;
+		border: none;
+		backdrop-filter: none;
+	}
+}
