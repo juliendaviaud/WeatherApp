@@ -64,7 +64,7 @@ const TemperaturePerHour = ({ hourlyWeather, sunrise, sunset, isNight }) => {
 
   return (
     <div className="TPHContainer">
-      <p className="hourPrevisionsTitle">Prévisions 3h par 3h</p>
+      <p className="hourPrevisionsTitle">Prévisions toutes les 3h</p>
       <div className="TPHLine">
         {hourlyWeather.map((hour, index) => (
           <div className={"TPH " + (index === 0 ? "firstTPH" : "")} key={index}>
