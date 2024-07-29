@@ -3,14 +3,9 @@ import "./TemperatureAndQuickInfos.css";
 import arrow from "../../assets/images/icons/arrow.svg";
 
 const TemperatureAndQuickInfos = ({ weather }) => {
-
-  /* useEffect(() => {
-    console.log(weather);
-  },[weather]) */
-
   return (
     <div className="TemperatureAndQuickInfosContainer">
-       <p className="city">{weather.name}</p>
+      <p className="city">{weather.name}</p>
       <div className="temperature">
         <p className="temperatureNumber">{Math.round(weather.main.temp)}</p>
         <p className="degreeSign">°</p>

@@ -4,7 +4,6 @@ import WeatherInformations from "../WeatherInformations/WeatherInformations";
 import Menu from "../Menu/Menu";
 import { fetchWeather, fetchHourlyWeather, fetchDailyWeather } from "../api";
 
-
 const MainPage = () => {
   const [city, setCity] = useState("Montpellier");
   const [weather, setWeather] = useState(null);
@@ -153,12 +152,7 @@ const MainPage = () => {
   };
 
   return (
-    <div
-      className="mainPage"
-      /* style={{
-        backgroundImage: "url(../../assets/icons/" + backgroundImage + ".svg)",
-      }} */
-    >
+    <div className="mainPage">
       <div className="appContainer">
         {/* <Menu cities={cities} setCity={setCity} addCity={addCity}/> */}
         <WeatherInformations

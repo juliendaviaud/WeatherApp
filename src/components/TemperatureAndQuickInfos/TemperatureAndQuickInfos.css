@@ -17,9 +17,6 @@
   display: flex;
 }
 
-.temperatureNumber {
-}
-
 .degreeSign {
   position: absolute;
   margin-left: 1em;
@@ -82,14 +79,14 @@
 
   .temperatureNumber,
   .degreeSign {
-    font-size: 4.50rem;
+    font-size: 4.5rem;
   }
 
   .weather {
-    font-size: 1.40rem;
+    font-size: 1.4rem;
   }
 
   .higherAndLowerTemperature p {
-    font-size: 1.50rem;
+    font-size: 1.5rem;
   }
 }

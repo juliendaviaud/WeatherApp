@@ -40,16 +40,6 @@ const PrecipitationMap = ({ coord }) => {
 
   return (
     <div className="weatherMap">
-      {/* <MapContainer
-        className="MapCotnainer"
-        center={[coord.lat, coord.lon]}
-        zoom={10}
-      >
-        <TileLayer url={mapUrl} />
-        <Marker position={[coord.lat, coord.lon]}></Marker>
-      </MapContainer> */}
-      {/* we have to define height attribute for the map-container in css style,
-      otherwise the map won't display correctly */}
       <p className="mapTitle">Précipitations</p>
       <MapContainer
         id="map"
@@ -60,15 +50,6 @@ const PrecipitationMap = ({ coord }) => {
       >
         <TileLayer url={openstreetmapMapUrl} />
         <TileLayer url={precipitationMapUrl} />
-        {/* <Marker position={position}>
-          <Popup>
-            {city}, {country}
-            <br />
-            {lat}, {lon}
-            <br />
-            <b>{main}</b> | {temp}&deg; / {celsius}&deg;C
-          </Popup>
-        </Marker> */}
       </MapContainer>
     </div>
   );

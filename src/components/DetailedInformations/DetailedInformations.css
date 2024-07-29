@@ -1,24 +1,24 @@
 .detailedInformations {
-	display: grid;
-	width: 80%;
+  display: grid;
+  width: 80%;
 }
 
 .TPHAndMap {
-	display: flex;
-	justify-content: space-between;
-	margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
 }
 
 @media screen and (max-width: 992px) {
-	.detailedInformations {
-		width: 100%;
-	}
+  .detailedInformations {
+    width: 100%;
+  }
 
-	.TPHAndMap {
-		width: 100%;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		margin-top: 25px;
-	}
+  .TPHAndMap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 25px;
+  }
 }

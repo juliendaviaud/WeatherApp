@@ -15,10 +15,6 @@ import snow from "../../assets/images/icons/snow.svg";
 import mist from "../../assets/images/icons/mist.svg";
 
 const TemperaturePerHour = ({ hourlyWeather, sunrise, sunset, isNight }) => {
-  /* useEffect(() => {
-    
-  }, [hourlyWeather]); */
-
   const renderSwitch = (weatherDescription, isNight) => {
     switch (weatherDescription) {
       case "clear sky":
@@ -79,14 +75,6 @@ const TemperaturePerHour = ({ hourlyWeather, sunrise, sunset, isNight }) => {
                 {new Date(hour.dt * 1000).getHours() - 2}h
               </span>
             )}
-            {/* {hour.dt > sunrise && hour.dt < sunset ? <img
-            src={renderSwitch(hour.weather[0].description, true)}
-            alt="Sunny icon"
-          /> :
-            <img
-          src={renderSwitch(hour.weather[0].description, false)}
-          alt="Sunny icon"
-        />} */}
 
             <img
               src={renderSwitch(
@@ -95,8 +83,6 @@ const TemperaturePerHour = ({ hourlyWeather, sunrise, sunset, isNight }) => {
               )}
               alt="Sunny icon"
             />
-
-            {/* <span>{sunrise}</span> */}
 
             <span className="TPHTemperature">
               {Math.round(hour.main.temp)}°

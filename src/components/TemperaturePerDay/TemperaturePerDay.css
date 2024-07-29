@@ -3,7 +3,6 @@
   margin-right: 25px;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
   padding: 20px;
   padding-top: 13px;
   background-color: rgba(13, 101, 169, 0.53);
@@ -25,12 +24,12 @@
 }
 
 .daysPrevisionsTitle {
-	width: 100%;
-	padding-bottom: 13px;
-	text-align: start;
-	font-size: 1rem;
-	font-weight: 600;
-	color: #ffffff9a;
+  width: 100%;
+  padding-bottom: 13px;
+  text-align: start;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff9a;
 }
 
 /*---- TPH Element ----*/
@@ -48,10 +47,6 @@
 
 .firstTPD {
   margin-top: 0;
-}
-
-.TPDHour,
-.TPD img {
 }
 
 .TPDIconAndTemp {
@@ -81,8 +76,8 @@
 }
 
 @media screen and (max-width: 992px) {
-	.TPDContainer {
-		width: auto;
-		margin-right: 0;
-	}
+  .TPDContainer {
+    width: auto;
+    margin-right: 0;
+  }
 }
