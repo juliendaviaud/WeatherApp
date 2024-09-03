@@ -12,6 +12,9 @@ import snow from "../../assets/images/icons/snow.svg";
 import mist from "../../assets/images/icons/mist.svg";
 
 const TemperaturePerDay = ({ dailyWeather }) => {
+  console.log("Pouet");
+  console.log(dailyWeather);
+
   const renderSwitch = (weatherDescription) => {
     switch (weatherDescription) {
       case "clear sky":
@@ -27,6 +30,8 @@ const TemperaturePerDay = ({ dailyWeather }) => {
       case "drizzle":
         return drizzle;
       case "shower rain":
+        return showerRain;
+      case "heavy intensity rain":
         return showerRain;
       case "rain":
         return rain;
