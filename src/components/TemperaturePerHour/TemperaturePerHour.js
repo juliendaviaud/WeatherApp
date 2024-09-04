@@ -39,6 +39,8 @@ const TemperaturePerHour = ({ hourlyWeather, sunrise, sunset, isNight }) => {
         return drizzle;
       case "shower rain":
         return showerRain;
+      case "moderate rain":
+        return showerRain;
       case "rain":
         if (isNight) {
           return sleetyNight;
